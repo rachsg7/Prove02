@@ -1,0 +1,23 @@
+<%- include('includes/head.ejs') %>
+    <%- include('includes/nav.ejs') %>
+        <main>
+            <h2>Books!</h2>
+            <% if(novels.length > 0) { %>
+                <div class="userEntries">
+
+                    <% for(let book of novels) { %>
+                        <article>
+                            <h2>
+                                <%= book.title %>
+                            </h2>
+                            <p>
+                                <%= book.summary %>
+                            </p>
+                        </article>
+                        <% } %>
+
+                </div>
+                <% } else {%>
+                    <p>No books found</p>
+                    <% } %>
+        </main>

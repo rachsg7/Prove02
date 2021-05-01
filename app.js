@@ -12,7 +12,7 @@ app.set('view engine', 'ejs'); // Tell the express engine that you're using pug 
 app.set('views', 'views');
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); // This is what allows us to serve static files
 
 app.use(prove02Routes);
 
