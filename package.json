@@ -2,7 +2,7 @@
     "name": "prove02",
     "version": "1.0.0",
     "description": "",
-    "main": "prove02-routes.js",
+    "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon app.js"
